@@ -45,9 +45,6 @@ def get_movie(movie_title):
 def is_movie_command(message_text):
 	return message_text[7:] if message_text[0:7] == '/movie ' else ""
 
-def is_book_command(message_text):
-	return message_text[6:] if message_text[0:6] == '/book ' else ""
-
 def main():
 	update_id = get_update(url)['update_id']
 	while True:
